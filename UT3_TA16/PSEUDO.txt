@@ -1,0 +1,44 @@
+
+
+LN:
+	- Se implementa un metodo que recorre la lista de peliculas y retorna aquella cuyo id coincide con el parametro, se retorna nulo en caso contrario.
+
+PRECONDICIONES: 
+	- El identificador sea de tipo valido.
+
+POSTCONDICIONES:
+	- Se retorna la lista de participantes de una pelicula cuyo identificador coincide con el parametro, en caso que no coincida la pelicula, se retorna una lista vacía.
+	- No se altera la lista.
+
+O(n)
+
+TLista<Participante> obtenerParticipantesPelicula(identificadorPelicula: Comparable)
+	Nodo pelicula <- listaPeliculas.buscar(identificadorPelicula)
+	SI (pelicula <> null)
+		return pelicula.getDato().getListaParticipantes()
+	retornar Lista<Participantes>
+
+LN:
+	- Se implementa un metodo que recorre la lista de peliculas y se busca en la lista de participantes, si algun id de participante coincide con el recibido por parametro, se agrega la pelicula a una lista retorno.
+
+PRECONDICIONES: 
+	- El identificador sea de tipo valido.
+
+POSTCONDICIONES:
+	- Se retorna la lista de peliculas que tengan al menos un participante cuya id coincida con el parametro.
+	- No se altera la lista.
+
+O(n*m), n=cantidad de peliculas m=cantidad de participantes
+
+TLista<Pelicula> obtenerPeliculasDelParticipante(identificadorParticipante: Comparable)
+	TLista<Peliculas> toReturn <- new TLista<Peliculas>();
+	Nodo pelicula <- listaPeliculas.primero
+	MIENTRAS (pelicula != null)
+		Nodo participante = pelicula.getDato().getListaParticipantes().buscar(identificadorParticipante)
+		SI (participante != null)
+			toReturn.insertarAlInicio(pelicula)
+		FIN SI
+
+		pelicula = pelicula.siguiente
+	FIN MIENTRAS
+	return toReturn
