@@ -4,9 +4,6 @@
  */
 package ta1.mavenproject2;
 
-import java.util.*;
-
-
 /**
  *
  * @author ingFo
@@ -14,7 +11,7 @@ import java.util.*;
 public class Compilador {
     public boolean controlCorchetes(String lista) {
         
-        Stack<Character> aux = new Stack();
+        IPila<Character> aux = new Pila();
         
         for (int i=0; i<lista.length(); i++) {
             
@@ -22,14 +19,14 @@ public class Compilador {
             
             if(esDeApertura(letra)) {
                 
-                aux.push(letra);
+                aux.apilar(letra);
             } else {
-                if (aux.isEmpty()) return false;
-                aux.pop();
+                if (aux.esVacia()) return false;
+                aux.desapilar();
             }
         }
         
-        return aux.isEmpty();
+        return aux.esVacia();
     }
     
     private boolean esDeApertura(char letra) {
