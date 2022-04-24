@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="NewEmptyJUnitTest" time="0.042" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="NewEmptyJUnitTest" time="0.046" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\ingFo\OneDrive\Documentos\NetBeansProjects\mavenproject2\target\test-classes;C:\Users\ingFo\OneDrive\Documentos\NetBeansProjects\mavenproject2\target\classes;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ingFo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\ingFo\OneDrive\Escritorio\GIT\euipo04tas\UT3_TA6\target\test-classes;C:\Users\ingFo\OneDrive\Escritorio\GIT\euipo04tas\UT3_TA6\target\classes;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ingFo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="user.country" value="UY"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\ingFo\AppData\Local\Temp\surefire14340369230460233034\surefirebooter14472852873926559153.jar C:\Users\ingFo\AppData\Local\Temp\surefire14340369230460233034 2022-04-20T19-39-55_296-jvmRun1 surefire141351224089210540tmp surefire_04844343528273846594tmp"/>
+    <property name="sun.java.command" value="C:\Users\ingFo\AppData\Local\Temp\surefire12149680124706156165\surefirebooter8518723698769219973.jar C:\Users\ingFo\AppData\Local\Temp\surefire12149680124706156165 2022-04-24T11-59-34_152-jvmRun1 surefire8469607389885731323tmp surefire_015806227165166248796tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\ingFo\OneDrive\Documentos\NetBeansProjects\mavenproject2\target\test-classes;C:\Users\ingFo\OneDrive\Documentos\NetBeansProjects\mavenproject2\target\classes;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ingFo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\ingFo\OneDrive\Escritorio\GIT\euipo04tas\UT3_TA6\target\test-classes;C:\Users\ingFo\OneDrive\Escritorio\GIT\euipo04tas\UT3_TA6\target\classes;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\ingFo\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\ingFo\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ingFo"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2022-01-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\ingFo\OneDrive\Documentos\NetBeansProjects\mavenproject2"/>
+    <property name="basedir" value="C:\Users\ingFo\OneDrive\Escritorio\GIT\euipo04tas\UT3_TA6"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ingFo\AppData\Local\Temp\surefire14340369230460233034\surefirebooter14472852873926559153.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ingFo\AppData\Local\Temp\surefire12149680124706156165\surefirebooter8518723698769219973.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\ingFo\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.2"/>
-    <property name="user.dir" value="C:\Users\ingFo\OneDrive\Documentos\NetBeansProjects\mavenproject2"/>
+    <property name="user.dir" value="C:\Users\ingFo\OneDrive\Escritorio\GIT\euipo04tas\UT3_TA6"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -57,10 +57,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="simpleTest" classname="NewEmptyJUnitTest" time="0.028"/>
+  <testcase name="simpleTest" classname="NewEmptyJUnitTest" time="0.029"/>
   <testcase name="empty" classname="NewEmptyJUnitTest" time="0"/>
   <testcase name="complexTest" classname="NewEmptyJUnitTest" time="0"/>
   <testcase name="example1" classname="NewEmptyJUnitTest" time="0.001"/>
-  <testcase name="example2" classname="NewEmptyJUnitTest" time="0.002"/>
-  <testcase name="example3" classname="NewEmptyJUnitTest" time="0.001"/>
+  <testcase name="example2" classname="NewEmptyJUnitTest" time="0"/>
+  <testcase name="example3" classname="NewEmptyJUnitTest" time="0"/>
 </testsuite>
