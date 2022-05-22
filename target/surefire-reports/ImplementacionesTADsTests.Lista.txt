@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ImplementacionesTADsTests.Lista
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! - in ImplementacionesTADsTests.Lista
+listaVaciaEsVacia  Time elapsed: 0.041 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ITADs.ILista.esVacia()" because "this.listaVacia" is null
+	at ImplementacionesTADsTests.Lista.listaVaciaEsVacia(Lista.java:24)
+
