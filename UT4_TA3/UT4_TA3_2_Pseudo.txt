@@ -1,0 +1,59 @@
+LN:
+
+Método de clase ArbolBB, que recibe una lista, verifica si esta vacía o no. 
+En caso de estar vacía se retorna una nueva lista vacía. 
+En caso contrario se la pasa como argumento al método de NodoABB inorden dónde luego de hacer operaciones se devuelve la misma.
+
+Precondiciones:
+-La lista recibida como argumento debe ser válida
+
+Postcondiciones:
+-La lista devuelta debe contener los datos de los nodos del árbol
+
+
+Pseudo:
+
+public TLista<T> inOrden(TLista<T>)
+
+TLista<T> lista = new TLista
+SI this.raiz == null HACER
+	return lista
+FIN SI
+this.raiz.inOrden(lista)
+return lista
+
+-Orden de ejecución:
+
+O(N) que es el órden del método al que se llama (inOrden)
+
+----------------------------------------
+
+LN:
+
+Método de clase NodoABB, que recibe una lista, la recorre en inorden, crea una nueva lista y en esta 
+inserta nodos con la misma etiqueta y dato que los del árbol. 
+
+
+Precondiciones:
+-La lista recibida como argumento debe ser válida
+
+Postcondiciones:
+-La lista debe contener la misma cantidad de nodos que los del árbol.
+
+
+-Pseudo:
+
+public void inorden(TLista<T> lista)
+
+SI hijoIzq != null HACER
+	hijoIzq.inOrden(lista)
+FIN SI
+TNodoLista nodo ) new TNodoLista(this.getEtiqueta(),this.getDato())
+lista.insertar(n) 
+SI hijoDer != null HACER
+	hijoDer.inOrden(lista)
+FIN SI
+
+-Orden de ejecución:
+
+O(N) siendo n la cantidad de nodos del árbol
