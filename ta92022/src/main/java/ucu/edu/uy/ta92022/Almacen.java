@@ -71,7 +71,13 @@ public class Almacen implements IAlmacen {
 
     @Override
     public Integer restarStock(Comparable clave, Integer cantidad) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        IElementoAB<Producto> buscado = this.productos.buscar(clave);
+        if (buscado == null) {
+            return 0;
+        }
+        buscado.getDatos().restarStock(cantidad);
+        return buscado.getDatos().getStock();
     }
 
     @Override

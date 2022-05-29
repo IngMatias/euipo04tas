@@ -4,6 +4,7 @@ import ucu.edu.uy.tda.TArbolBB;
 import ucu.edu.uy.tda.TElementoAB;
 import ucu.edu.uy.util.ManejadorArchivosGenerico;
 import ucu.edu.uy.tda.INodo;
+import ucu.edu.uy.tda.ListaOrdenada;
 import ucu.edu.uy.tda.Nodo;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
      */
     public static void main(String[] args) {
         IAlmacen almacen = new Almacen("Almacen de Matias");
-        
+        /*
         // cargar los productos desde el archivo "altasprueba.txt"
         String[] altasPruebas = ManejadorArchivosGenerico.leerArchivo("altasPrueba.txt");
         
@@ -92,7 +93,7 @@ public class Main {
         System.out.println(almacen.valorDelStock());
 
         // listar los productos ordenados por codigo, junto con su cantidad existente
-        
+        */
 
         
         //Ej 2
@@ -125,7 +126,7 @@ public class Main {
                 //TODO: handle exception
             }
         }
-
+        
         //Primero cargo el archivo "altas.txt" aunque la letra no lo pida porque sino no se elimina nada
         System.out.println(almacen.imprimirProductos());
 
@@ -147,20 +148,34 @@ public class Main {
         
         System.out.println("El monto total eliminado es:" + (stockAnterior2 - stockPosterior2));
         System.out.println(almacen.valorDelStock());
+        
+        
 
-
-        String[] Lineas_salida = new String[almacen.getProductos().cantElementos()]; //Hago el array del tamaño de la cantidad de elementos de la lista de equipos
+        //Ej 2 parte 1 sub equipo b
+        String[] Lineas_salida = new String[157]; //Si uso almacen.getProductos().cantElementos() para el largo del array me tira Exception in thread "main" java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null después de bastante prueba y error me di cuenta de que era error del largo del array. 157 es el máximo largo que le puedo poner al array sin que tire error. No se porque aparece el error pero no lo he podido solucionar.
             int contador = 0;
+            ListaOrdenada<Producto> listaOrdenadaProductos = new ListaOrdenada<>();
             Nodo<Producto> nodoProducto = almacen.getProductos().getPrimero();
             while(nodoProducto != null){
-                String productoData = nodoProducto.getDato().getNombre() + "," + nodoProducto.getDato().getPrecio();
+                Nodo<Producto> nodoProductoNombre = new Nodo<Producto>(nodoProducto.getDato().getNombre(), nodoProducto.getDato());
+                listaOrdenadaProductos.insertar(nodoProductoNombre.clonar());
+                nodoProducto = nodoProducto.getSiguiente();
+                                              
+            }
+            Nodo<Producto> nodoProducto2 = listaOrdenadaProductos.getPrimero();
+            while (nodoProducto2 != null) {
+                String productoData = nodoProducto2.getDato().getNombre() + "," + nodoProducto2.getDato().getPrecio();
                 Lineas_salida[contador] = productoData;
                 contador += 1;
-                nodoProducto = nodoProducto.getSiguiente();
-                
+                nodoProducto2 = nodoProducto2.getSiguiente();
             }
-            ManejadorArchivosGenerico archivo = new ManejadorArchivosGenerico();
-            ManejadorArchivosGenerico.escribirArchivo("productos.txt",Lineas_salida);
+            System.out.print("El valor del stock es ");
+            System.out.println(almacen.valorDelStock());
+           
+            ManejadorArchivosGenerico.escribirArchivo("productos.txt",Lineas_salida); //cuando el archivo de altas esta completo tira error pero si borro la mitad de las lineas funciona ni idea
+            
+
+
 
     }
 }
